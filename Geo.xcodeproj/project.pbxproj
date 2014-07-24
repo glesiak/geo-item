@@ -7,34 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DABDD991B61549369CA2496D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A445EE6BD027451285B9B7EB /* libPods.a */; };
+		FADE0F4D197FC9F40044EEF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADE0F4C197FC9F40044EEF8 /* Main.storyboard */; };
 		FAE36CDD197FC775003DFF41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE36CDC197FC775003DFF41 /* Foundation.framework */; };
 		FAE36CDF197FC775003DFF41 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE36CDE197FC775003DFF41 /* CoreGraphics.framework */; };
 		FAE36CE1197FC775003DFF41 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE36CE0197FC775003DFF41 /* UIKit.framework */; };
 		FAE36CE7197FC775003DFF41 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAE36CE5197FC775003DFF41 /* InfoPlist.strings */; };
 		FAE36CE9197FC775003DFF41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE36CE8197FC775003DFF41 /* main.m */; };
-		FAE36CED197FC775003DFF41 /* GEOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE36CEC197FC775003DFF41 /* GEOAppDelegate.m */; };
-		FAE36CF0197FC775003DFF41 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAE36CEE197FC775003DFF41 /* Main_iPhone.storyboard */; };
-		FAE36CF3197FC775003DFF41 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAE36CF1197FC775003DFF41 /* Main_iPad.storyboard */; };
-		FAE36CF6197FC775003DFF41 /* GEOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE36CF5197FC775003DFF41 /* GEOViewController.m */; };
 		FAE36CF8197FC775003DFF41 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAE36CF7197FC775003DFF41 /* Images.xcassets */; };
-		FAE36CFF197FC775003DFF41 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE36CFE197FC775003DFF41 /* XCTest.framework */; };
-		FAE36D00197FC775003DFF41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE36CDC197FC775003DFF41 /* Foundation.framework */; };
-		FAE36D01197FC775003DFF41 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE36CE0197FC775003DFF41 /* UIKit.framework */; };
-		FAE36D09197FC775003DFF41 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAE36D07197FC775003DFF41 /* InfoPlist.strings */; };
-		FAE36D0B197FC775003DFF41 /* GeoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE36D0A197FC775003DFF41 /* GeoTests.m */; };
+		FAE36D20197FC7F3003DFF41 /* GEOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE36D15197FC7F3003DFF41 /* GEOAppDelegate.m */; };
+		FAE36D21197FC7F3003DFF41 /* GEOItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE36D17197FC7F3003DFF41 /* GEOItem.m */; };
+		FAE36D22197FC7F3003DFF41 /* GEOAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE36D19197FC7F3003DFF41 /* GEOAnnotation.m */; };
+		FAE36D23197FC7F3003DFF41 /* GEOItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE36D1B197FC7F3003DFF41 /* GEOItemViewController.m */; };
+		FAE36D24197FC7F3003DFF41 /* GEOLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE36D1D197FC7F3003DFF41 /* GEOLocation.m */; };
+		FAE36D25197FC7F3003DFF41 /* GEORootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE36D1F197FC7F3003DFF41 /* GEORootViewController.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		FAE36D02197FC775003DFF41 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FAE36CD1197FC775003DFF41 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FAE36CD8197FC775003DFF41;
-			remoteInfo = Geo;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		A445EE6BD027451285B9B7EB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F644ADE8E87447E194EDECF6 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		FADE0F4C197FC9F40044EEF8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		FAE36CD9197FC775003DFF41 /* Geo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE36CDC197FC775003DFF41 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FAE36CDE197FC775003DFF41 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -43,18 +35,20 @@
 		FAE36CE6197FC775003DFF41 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FAE36CE8197FC775003DFF41 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FAE36CEA197FC775003DFF41 /* Geo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Geo-Prefix.pch"; sourceTree = "<group>"; };
-		FAE36CEB197FC775003DFF41 /* GEOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GEOAppDelegate.h; sourceTree = "<group>"; };
-		FAE36CEC197FC775003DFF41 /* GEOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GEOAppDelegate.m; sourceTree = "<group>"; };
-		FAE36CEF197FC775003DFF41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		FAE36CF2197FC775003DFF41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		FAE36CF4197FC775003DFF41 /* GEOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GEOViewController.h; sourceTree = "<group>"; };
-		FAE36CF5197FC775003DFF41 /* GEOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GEOViewController.m; sourceTree = "<group>"; };
 		FAE36CF7197FC775003DFF41 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		FAE36CFD197FC775003DFF41 /* GeoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE36CFE197FC775003DFF41 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		FAE36D06197FC775003DFF41 /* GeoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GeoTests-Info.plist"; sourceTree = "<group>"; };
-		FAE36D08197FC775003DFF41 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FAE36D0A197FC775003DFF41 /* GeoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeoTests.m; sourceTree = "<group>"; };
+		FAE36D14197FC7F3003DFF41 /* GEOAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEOAppDelegate.h; sourceTree = "<group>"; };
+		FAE36D15197FC7F3003DFF41 /* GEOAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GEOAppDelegate.m; sourceTree = "<group>"; };
+		FAE36D16197FC7F3003DFF41 /* GEOItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEOItem.h; sourceTree = "<group>"; };
+		FAE36D17197FC7F3003DFF41 /* GEOItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GEOItem.m; sourceTree = "<group>"; };
+		FAE36D18197FC7F3003DFF41 /* GEOAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEOAnnotation.h; sourceTree = "<group>"; };
+		FAE36D19197FC7F3003DFF41 /* GEOAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GEOAnnotation.m; sourceTree = "<group>"; };
+		FAE36D1A197FC7F3003DFF41 /* GEOItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEOItemViewController.h; sourceTree = "<group>"; };
+		FAE36D1B197FC7F3003DFF41 /* GEOItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GEOItemViewController.m; sourceTree = "<group>"; };
+		FAE36D1C197FC7F3003DFF41 /* GEOLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEOLocation.h; sourceTree = "<group>"; };
+		FAE36D1D197FC7F3003DFF41 /* GEOLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GEOLocation.m; sourceTree = "<group>"; };
+		FAE36D1E197FC7F3003DFF41 /* GEORootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEORootViewController.h; sourceTree = "<group>"; };
+		FAE36D1F197FC7F3003DFF41 /* GEORootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GEORootViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,29 +59,39 @@
 				FAE36CDF197FC775003DFF41 /* CoreGraphics.framework in Frameworks */,
 				FAE36CE1197FC775003DFF41 /* UIKit.framework in Frameworks */,
 				FAE36CDD197FC775003DFF41 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAE36CFA197FC775003DFF41 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FAE36CFF197FC775003DFF41 /* XCTest.framework in Frameworks */,
-				FAE36D01197FC775003DFF41 /* UIKit.framework in Frameworks */,
-				FAE36D00197FC775003DFF41 /* Foundation.framework in Frameworks */,
+				DABDD991B61549369CA2496D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FADE0F4E197FCA0D0044EEF8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FADE0F4C197FC9F40044EEF8 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FADE0F4F197FCE180044EEF8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FAE36D1A197FC7F3003DFF41 /* GEOItemViewController.h */,
+				FAE36D1B197FC7F3003DFF41 /* GEOItemViewController.m */,
+				FAE36D1E197FC7F3003DFF41 /* GEORootViewController.h */,
+				FAE36D1F197FC7F3003DFF41 /* GEORootViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		FAE36CD0197FC775003DFF41 = {
 			isa = PBXGroup;
 			children = (
 				FAE36CE2197FC775003DFF41 /* Geo */,
-				FAE36D04197FC775003DFF41 /* GeoTests */,
 				FAE36CDB197FC775003DFF41 /* Frameworks */,
 				FAE36CDA197FC775003DFF41 /* Products */,
+				F644ADE8E87447E194EDECF6 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,7 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				FAE36CD9197FC775003DFF41 /* Geo.app */,
-				FAE36CFD197FC775003DFF41 /* GeoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,6 +110,7 @@
 				FAE36CDE197FC775003DFF41 /* CoreGraphics.framework */,
 				FAE36CE0197FC775003DFF41 /* UIKit.framework */,
 				FAE36CFE197FC775003DFF41 /* XCTest.framework */,
+				A445EE6BD027451285B9B7EB /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,12 +118,11 @@
 		FAE36CE2197FC775003DFF41 /* Geo */ = {
 			isa = PBXGroup;
 			children = (
-				FAE36CEB197FC775003DFF41 /* GEOAppDelegate.h */,
-				FAE36CEC197FC775003DFF41 /* GEOAppDelegate.m */,
-				FAE36CEE197FC775003DFF41 /* Main_iPhone.storyboard */,
-				FAE36CF1197FC775003DFF41 /* Main_iPad.storyboard */,
-				FAE36CF4197FC775003DFF41 /* GEOViewController.h */,
-				FAE36CF5197FC775003DFF41 /* GEOViewController.m */,
+				FAE36D14197FC7F3003DFF41 /* GEOAppDelegate.h */,
+				FAE36D15197FC7F3003DFF41 /* GEOAppDelegate.m */,
+				FADE0F4E197FCA0D0044EEF8 /* View */,
+				FAE36D26197FC82F003DFF41 /* Model */,
+				FADE0F4F197FCE180044EEF8 /* Controller */,
 				FAE36CF7197FC775003DFF41 /* Images.xcassets */,
 				FAE36CE3197FC775003DFF41 /* Supporting Files */,
 			);
@@ -137,22 +140,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FAE36D04197FC775003DFF41 /* GeoTests */ = {
+		FAE36D26197FC82F003DFF41 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FAE36D0A197FC775003DFF41 /* GeoTests.m */,
-				FAE36D05197FC775003DFF41 /* Supporting Files */,
+				FAE36D16197FC7F3003DFF41 /* GEOItem.h */,
+				FAE36D17197FC7F3003DFF41 /* GEOItem.m */,
+				FAE36D18197FC7F3003DFF41 /* GEOAnnotation.h */,
+				FAE36D19197FC7F3003DFF41 /* GEOAnnotation.m */,
+				FAE36D1C197FC7F3003DFF41 /* GEOLocation.h */,
+				FAE36D1D197FC7F3003DFF41 /* GEOLocation.m */,
 			);
-			path = GeoTests;
-			sourceTree = "<group>";
-		};
-		FAE36D05197FC775003DFF41 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				FAE36D06197FC775003DFF41 /* GeoTests-Info.plist */,
-				FAE36D07197FC775003DFF41 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAE36D0E197FC775003DFF41 /* Build configuration list for PBXNativeTarget "Geo" */;
 			buildPhases = (
+				98C8399B0F8A414EA17F2ACA /* Check Pods Manifest.lock */,
 				FAE36CD5197FC775003DFF41 /* Sources */,
 				FAE36CD6197FC775003DFF41 /* Frameworks */,
 				FAE36CD7197FC775003DFF41 /* Resources */,
+				53B39D6D1A3E46728900F456 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -175,24 +175,6 @@
 			productReference = FAE36CD9197FC775003DFF41 /* Geo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FAE36CFC197FC775003DFF41 /* GeoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FAE36D11197FC775003DFF41 /* Build configuration list for PBXNativeTarget "GeoTests" */;
-			buildPhases = (
-				FAE36CF9197FC775003DFF41 /* Sources */,
-				FAE36CFA197FC775003DFF41 /* Frameworks */,
-				FAE36CFB197FC775003DFF41 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FAE36D03197FC775003DFF41 /* PBXTargetDependency */,
-			);
-			name = GeoTests;
-			productName = GeoTests;
-			productReference = FAE36CFD197FC775003DFF41 /* GeoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,11 +184,6 @@
 				CLASSPREFIX = GEO;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = glesiak;
-				TargetAttributes = {
-					FAE36CFC197FC775003DFF41 = {
-						TestTargetID = FAE36CD8197FC775003DFF41;
-					};
-				};
 			};
 			buildConfigurationList = FAE36CD4197FC775003DFF41 /* Build configuration list for PBXProject "Geo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -222,7 +199,6 @@
 			projectRoot = "";
 			targets = (
 				FAE36CD8197FC775003DFF41 /* Geo */,
-				FAE36CFC197FC775003DFF41 /* GeoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -232,81 +208,69 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAE36CF3197FC775003DFF41 /* Main_iPad.storyboard in Resources */,
+				FADE0F4D197FC9F40044EEF8 /* Main.storyboard in Resources */,
 				FAE36CF8197FC775003DFF41 /* Images.xcassets in Resources */,
-				FAE36CF0197FC775003DFF41 /* Main_iPhone.storyboard in Resources */,
 				FAE36CE7197FC775003DFF41 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FAE36CFB197FC775003DFF41 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53B39D6D1A3E46728900F456 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAE36D09197FC775003DFF41 /* InfoPlist.strings in Resources */,
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
-/* End PBXResourcesBuildPhase section */
+		98C8399B0F8A414EA17F2ACA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FAE36CD5197FC775003DFF41 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAE36CF6197FC775003DFF41 /* GEOViewController.m in Sources */,
-				FAE36CED197FC775003DFF41 /* GEOAppDelegate.m in Sources */,
+				FAE36D24197FC7F3003DFF41 /* GEOLocation.m in Sources */,
+				FAE36D21197FC7F3003DFF41 /* GEOItem.m in Sources */,
+				FAE36D25197FC7F3003DFF41 /* GEORootViewController.m in Sources */,
+				FAE36D20197FC7F3003DFF41 /* GEOAppDelegate.m in Sources */,
 				FAE36CE9197FC775003DFF41 /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAE36CF9197FC775003DFF41 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FAE36D0B197FC775003DFF41 /* GeoTests.m in Sources */,
+				FAE36D23197FC7F3003DFF41 /* GEOItemViewController.m in Sources */,
+				FAE36D22197FC7F3003DFF41 /* GEOAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		FAE36D03197FC775003DFF41 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FAE36CD8197FC775003DFF41 /* Geo */;
-			targetProxy = FAE36D02197FC775003DFF41 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FAE36CE5197FC775003DFF41 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				FAE36CE6197FC775003DFF41 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		FAE36CEE197FC775003DFF41 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAE36CEF197FC775003DFF41 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		FAE36CF1197FC775003DFF41 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAE36CF2197FC775003DFF41 /* Base */,
-			);
-			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		FAE36D07197FC775003DFF41 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAE36D08197FC775003DFF41 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -388,6 +352,7 @@
 		};
 		FAE36D0F197FC775003DFF41 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F644ADE8E87447E194EDECF6 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -401,6 +366,7 @@
 		};
 		FAE36D10197FC775003DFF41 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F644ADE8E87447E194EDECF6 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -409,46 +375,6 @@
 				INFOPLIST_FILE = "Geo/Geo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		FAE36D12197FC775003DFF41 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Geo.app/Geo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Geo/Geo-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "GeoTests/GeoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		FAE36D13197FC775003DFF41 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Geo.app/Geo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Geo/Geo-Prefix.pch";
-				INFOPLIST_FILE = "GeoTests/GeoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -471,14 +397,7 @@
 				FAE36D10197FC775003DFF41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		FAE36D11197FC775003DFF41 /* Build configuration list for PBXNativeTarget "GeoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FAE36D12197FC775003DFF41 /* Debug */,
-				FAE36D13197FC775003DFF41 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

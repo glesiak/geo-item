@@ -11,6 +11,18 @@
 #endif
 
 #ifdef __OBJC__
+    #import <SystemConfiguration/SystemConfiguration.h>
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import <RestKit/CoreData.h>
+    #import <RestKit/RestKit.h>
+    #import <AFNetworking/AFNetworking.h>
+    #import <CoreLocation/CoreLocation.h>
+    #import <MapKit/MapKit.h>
+#endif
+
+#ifdef DEBUG
+    #define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+    #define DLog(...)
 #endif

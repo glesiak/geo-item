@@ -1,46 +1,73 @@
 //
-//  GEOAppDelegate.m
-//  Geo
+//  RTAppDelegate.m
+//  Recruitment Task
 //
-//  Created by macbook on 23/07/14.
-//  Copyright (c) 2014 glesiak. All rights reserved.
+//  Created by glesiak on 21/07/14.
 //
 
 #import "GEOAppDelegate.h"
 
+@interface GEOAppDelegate ()
+
+@property (nonatomic,assign) BOOL reachabilityStatus;
+@property (nonatomic,strong) AFHTTPClient *httpClient;
+
+@end
+
 @implementation GEOAppDelegate
+
+#pragma mark Application Lifecycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [self setupReachability];
+    [self setupRestkit];
+    [self setupInterface];
     return YES;
 }
-							
-- (void)applicationWillResignActive:(UIApplication *)application
+
+#pragma mark Application Setup
+
+- (void) setupReachability
 {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+    self.httpClient = [AFHTTPClient clientWithBaseURL:[NSURL URLWithString:@"http://google.com"]];
+    __weak GEOAppDelegate * weakSelf = self;
+    [self.httpClient setReachabilityStatusChangeBlock: ^(AFNetworkReachabilityStatus status)
+     {
+         switch ( status )
+         {
+             case AFNetworkReachabilityStatusReachableViaWiFi:
+             case AFNetworkReachabilityStatusReachableViaWWAN:
+             {
+                 DLog( @"Network is reachable" );
+                 weakSelf.reachabilityStatus = ReachabilityAvailable;
+                 break;
+             }
+             case AFNetworkReachabilityStatusNotReachable:
+             case AFNetworkReachabilityStatusUnknown:
+             default:
+             {
+                 DLog( @"Network is not reachable" );
+                 weakSelf.reachabilityStatus = ReachabilityUnavailable;
+                 [[[UIAlertView alloc] initWithTitle: @"Warning"
+                                             message: @"Network is not reachable."
+                                            delegate: nil cancelButtonTitle: @"Ok" otherButtonTitles: nil] show];
+                 break;
+             }
+         }
+         [[NSNotificationCenter defaultCenter] postNotificationName: @"ReachabilityUpdate" object: weakSelf
+                                                           userInfo: @{ @"status" : [NSNumber numberWithInteger: weakSelf.reachabilityStatus] } ];
+     }];
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application
+- (void) setupRestkit
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    [RKMIMETypeSerialization registerClass:[RKNSJSONSerialization class] forMIMEType:@"text/plain"];
 }
 
-- (void)applicationWillEnterForeground:(UIApplication *)application
+- (void) setupInterface
 {
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-}
-
-- (void)applicationDidBecomeActive:(UIApplication *)application
-{
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-}
-
-- (void)applicationWillTerminate:(UIApplication *)application
-{
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible: YES];
 }
 
 @end
